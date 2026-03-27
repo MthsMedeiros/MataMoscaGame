@@ -1,0 +1,93 @@
+/* Importa todas as funcionalidades do Tailwind CSS */
+@import "tailwindcss";
+
+/* Cria uma camada de estilos customizados (utilities) */
+@layer utilities {
+  /* Classe customizada para mudar o cursor do mouse */
+  .cursor-game {
+    /* Define um cursor customizado com fallback para cursor automático */
+    cursor: url("/img/mata_mosca.png"), auto;
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.tabuleiro {
+  /* @apply w-7xl h-full bg-[url(/img/bg.jpg)] border-5 bg-no-repeat bg-cover flex flex-col justify-center items-center cursor-game relative; */
+  position: relative;
+  width: 1280px;
+  height: 100%;
+  background-image: url("/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid purple;
+  cursor: url("/img/mata_mosca.png"), auto;
+  z-index: 0;
+}
+
+.healthPoints {
+  width: 200px;
+  border: 5px solid black;
+  background-color: rgba(245, 222, 179, 0.6);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.healthPoints .heartDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 12px;
+}
+
+#pTime {
+  font-size: 27px;
+}
+
+#time {
+  color: black;
+}
+
+.mosquito {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 4;
+  border: 1px solid black;
+  left: 0px;
+  top: 0px;
+  opacity: 1;
+
+}
+.gameOverDiv {
+  border: 5px solid black;
+  position: absolute;
+  width: 1280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  z-index: 3;
+}
+
+.game-over-screen {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.home-button{
+  width: 200px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

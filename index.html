@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configurações do documento HTML -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link para o CSS do Tailwind -->
+    <link rel="stylesheet" href="/src/homePage.css">
+    
+    <title>Mata Mosquito</title>
+</head>
+
+<body >
+    <!-- Container principal da tela inicial (menu) -->
+    <div class= "cursor-game" >
+        
+        <!-- Logo do jogo (imagem game.png) -->
+        <div class="logoGame">
+            <img src="./img/game.png" alt="Mata Mosquito">
+        </div>
+        
+        <!-- Container com o dropdown de dificuldade e botão de iniciar -->
+        <div class="containerForm">
+            
+            <!-- Dropdown para escolher a dificuldade -->
+            <select name="selectDificulty" id="selectDificulty" class="selectDificulty">
+                <option value="" class=""> -- Selecione o Nivel --</option>
+                <option value="easy" class="">Fácil</option>
+                <option value="medium" class="">Médio</option>
+                <option value="hard" class="">Difícil</option>
+            </select>
+            
+            <!-- Botão que chama a função startGame() do JavaScript -->
+            <button onclick="startGame()" id="startButton" class="btn-StartGame" >Iniciar</button>
+        </div>
+    </div>
+    
+    <!-- Link do arquivo JavaScript para processar interações -->
+    <script src="./scripts/home_script.js"></script>
+</body>
+</html>

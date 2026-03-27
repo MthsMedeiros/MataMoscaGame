@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Configurações básicas do HTML -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link para o arquivo CSS do Tailwind -->
+    <link rel="stylesheet" href="/src/gamePage.css" />
+
+    <title>Mata Mosquito</title>
+  </head>
+
+  <body>
+    <!-- Imagem do mosquito que será movida aleatoriamente na tela -->
+
+    <!-- Container principal do jogo com background da imagem -->
+    <div id="tabuleiro" class="tabuleiro">
+      <!-- <img id="mosquito" src="./img/mosca.png" alt="mosquito" class="border-2 absolute bottom-100 left-0 size-25 z-20" /> -->
+      <!-- Div que mostra saúde (vidas) e temporizador -->
+      <div class="gameOverDiv"></div>
+      <div id="healthPoins" class="healthPoints">
+        <!-- Container dos 3 corações (vidas do jogador) -->
+        <div id="heartDiv" class="heartDiv">
+          <!-- Coração 1 -->
+          <img class="heart1" src="./img/coracao_cheio.png" alt="life" />
+          <!-- Coração 2 -->
+          <img class="heart2" src="./img/coracao_cheio.png" alt="life" />
+          <!-- Coração 3 -->
+          <img class="heart3" src="./img/coracao_cheio.png" alt="life" />
+        </div>
+
+        <!-- Exibe o tempo decorrido no jogo -->
+        <p id="pTime">
+          Tempo : <span id="time" >00:00</span>
+        </p>
+      </div>
+    </div>
+    <script src="./scripts/game_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.cursor-game {
+  cursor: url('/img/cursor.png'), auto;
+  width: 1280px;
+  height: 100vh;
+  background-image: url('/img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoGame {
+  width: 500px;
+  height: 500px;
+}
+
+.containerForm{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.selectDificulty {
+  background-color: white;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+.btn-StartGame {
+  background-color: #ef4444;
+  width: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
